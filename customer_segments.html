@@ -12160,7 +12160,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x117d6cd50&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x10f08cd50&gt;</pre>
 </div>
 
 </div>
@@ -12638,13 +12638,9 @@ From Milk Grocery Frozen Detergents_Paper Delicatessen to set([&#39;Fresh&#39;])
 <ul>
 <li>我尝试预测了所有特征。</li>
 <li>预测得分可见上面的输出。</li>
-<li>我认为这对区分消费者习惯来说很必要。
-我挑第一条来说明：
-第一条是 通过生肉、奶类、冷冻食品，清洁用品和熟食，来预测食品杂货的购买量。
-其中清洁用品在决策中的权重最大。
-大概可以断定，食品杂货的购买量和清洁用品相当。
-将这两者捆绑购买的商家应当是餐饮相关的企业。</li>
+<li>我认为R^2得分高的特征对区分用户的消费习惯来说并不必要。</li>
 </ul>
+<p>如果一个特征的R^2得分非常高的话，那么说明这个特征是可以被预测的，这个特征是隐含在其他特征中的，因此Grocery相较来说是不太必要的。</p>
 
 </div>
 </div>
@@ -14232,7 +14228,7 @@ khBCCCGEEEJoIWFJCCGEEEIIIbSQsCSEEEIIIYQQWvwPf4KKAHCc51AAAAAASUVORK5CYII=
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11cffde50&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1140e8d50&gt;</pre>
 </div>
 
 </div>
@@ -14712,7 +14708,7 @@ oZckC0IIIYTQ6/8B87PH6nm8zx0AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>可以看到Grocery和Milk,Detergents_Paper和Grocery,Detergents_Paper和Milk,Delicatessen和Delicatessen之间有相关关系。</p>
+<p>可以看到Grocery和Milk,Detergents_Paper和Grocery,Detergents_Paper和Milk之间有相关关系。</p>
 <p>从我的最优模型 ('Milk', 'Frozen', 'Detergents_Paper', 'Delicatessen') -&gt; ('Grocery')中的特征重要度可以发现
 Detergents_Paper有0.87410566的重要度。由此验证了这两个特征之间的相关性。</p>
 <p>不是正态分布，分布倾斜向小数据。</p>
@@ -19859,7 +19855,7 @@ AAAAAElFTkSuQmCC
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11c6b2290&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x112ebcd50&gt;</pre>
 </div>
 
 </div>
